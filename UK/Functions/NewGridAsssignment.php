@@ -13,9 +13,9 @@ if (mysqli_connect_errno()) {
 $Tourcode = $_SESSION['TourId'];
 
 //Get the parameters for the Event Name, Event Level and Group (A-F for the B2B is numbered 1-xxx)
-$Evcode = $_GET['EvCode'];
-$EvLevel = (int) $_GET['EvLevel'];
-$GridGr =  (int) $_GET['GridGr'];
+$Evcode = $_POST['EvCode'];
+$EvLevel = (int) $_POST['EvLevel'];
+$GridGr =  (int) $_POST['GridGr'];
 
 //Delete Existing grid
 $expongeGrid = "DELETE FROM RoundRobinGrids WHERE RrGridEvent = '$Evcode' AND RrGridLevel = '$EvLevel' AND RrGridTournament='$Tourcode' AND RrGridGroup='$GridGr'";
