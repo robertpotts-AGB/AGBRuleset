@@ -17,10 +17,10 @@ You can check this has worked in the grid assingments. Make sure all assignments
 <form method="post" action="/Functions/NewGridAssignment.php">
    
     <label>Event Code </label>
-    <input type="number" name="EventCode" min="0" value="" required /><br><br>
+    <input type="text" name="EvCode" min="0" value="" required /><br><br>
 
     <label>Event Level (1,2,3)</label>
-    <input type="number" name="EvvLevel" min="0" value="" required /><br><br>
+    <input type="number" name="EvLevel" min="0" value="" required /><br><br>
 
     <label>Event Grid (A,B,C etc as 1,2,3..): </label>
     <input type="number" name="GridGr" min="0" value="" required /><br><br>
