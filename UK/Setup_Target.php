@@ -15,6 +15,13 @@ if(($TourType==40) or (($TourType != 40)and($SubRule == 3))) {
 // default Classes
 CreateStandardClasses($TourId, $SubRule,$TourType);
 
+//Set Defaults for the team creation code
+SetModuleParameter('SetUK', 'TeamMode', 0);
+SetModuleParameter('SetUK', 'MenComponent', 1);
+SetModuleParameter('SetUK', 'WomenComponent', 1);
+SetModuleParameter('SetUK', 'MixedComponent', 2);
+
+
 // default Distances
 switch($TourType) {
 	case 1:
